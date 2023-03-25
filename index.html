@@ -1,9 +1,43 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1></h1>
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=, initial-scale=1.0" />
+		<title>Password Gen</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+		/>
+		<!-- Karla font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<section id="title-section">
+				<h1 class="title"><span>Generate a </span>random password 🔒</h1>
+				<p class="title-description">Never use an insecure password again.</p>
+			</section>
+
+			<!-- <section id="toggle-section"></section> -->
+			<section id="button-section">
+				<button type="button" class="generate-pass">Generate passwords</button>
+				<button type="button" class="reset">Reset</button>
+			</section>
+			<div class="spacing"><hr /></div>
+			<section id="password-section">
+				<input type="text" class="password1" />
+				<input type="text" class="password2" />
+			</section>
+		</main>
+
+		<script src="index.js"></script>
+	</body>
 </html>
