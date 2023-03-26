@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Password Gen</title>
 
 		<link
@@ -28,13 +28,53 @@
 					</h1>
 					<p class="title-description">Never use an insecure password again.</p>
 				</section>
-				<div class="spacing"><hr/></div>
+				<div class="spacing"><hr /></div>
 				<section id="toggle-section">
-					<label for="password-length">Password Length (1-15):</label>
-					<input type="number" id="password-length" min="1" max="15" value="15">
+					<label for="password-length" class="password-label"
+						>Password Length (1-15):</label
+					>
+					<input
+						type="number"
+						id="password-length"
+						min="1"
+						max="15"
+						value="15"
+					/>
 					<div id="error"></div>
-			  </section>
-			  <div class="spacing"></div>
+
+					<!-- 4 toggle checkbox -->
+					<div class="grid-container">
+						<div class="col">
+							<label class="toggle-label">
+								<input type="checkbox" class="toggle-input" />
+								<span class="slider round"></span>
+							</label>
+							<span class="toggle-text">Uppercase</span>
+						</div>
+						<div class="col">
+							<label class="toggle-label">
+								<input type="checkbox" class="toggle-input" />
+								<span class="slider round"></span>
+							</label>
+							<span class="toggle-text">Lowercase</span>
+						</div>
+						<div class="col">
+							<label class="toggle-label">
+								<input type="checkbox" class="toggle-input" />
+								<span class="slider round"></span>
+							</label>
+							<span class="toggle-text">Numbers</span>
+						</div>
+						<div class="col">
+							<label class="toggle-label">
+								<input type="checkbox" class="toggle-input" />
+								<span class="slider round"></span>
+							</label>
+							<span class="toggle-text">Symbols</span>
+						</div>
+					</div>
+				</section>
+				<div class="spacing"></div>
 				<section id="button-section">
 					<button type="button" class="generate-pass" onclick="setPassword()">
 						Generate passwords

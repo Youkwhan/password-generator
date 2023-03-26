@@ -13,7 +13,7 @@ Interactions:
 Extra:
    set password length
    copy on click
-   toggle numbers or symbol
+   toggle upper, lower, numbers or symbol - 4
 
 */
 let passwordLengthInput = document.getElementById("password-length");
@@ -21,11 +21,11 @@ let password1El = document.getElementsByClassName("password1")[0];
 let password2El = document.getElementsByClassName("password2")[0];
 
 //void
-function setPassword(){
+function setPassword() {
    let passwordLength = parseInt(passwordLengthInput.value);
    let errorDiv = document.getElementById("error");
    
-   if (validateInput(passwordLength)){
+   if (validateInput(passwordLength)) {
       password1El.textContent = getPassword(passwordLength);
       password2El.textContent = getPassword(passwordLength);
    } else {
