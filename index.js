@@ -16,9 +16,9 @@ Extra:
    toggle upper, lower, numbers or symbol - 4
 
 */
-let passwordLengthInput = document.getElementById("password-length");
-let password1El = document.getElementsByClassName("password1")[0];
-let password2El = document.getElementsByClassName("password2")[0];
+const passwordLengthInput = document.getElementById("password-length");
+const password1El = document.getElementsByClassName("password1")[0];
+const password2El = document.getElementsByClassName("password2")[0];
 
 //void
 function setPassword() {
@@ -57,7 +57,10 @@ function getRandomChar() {
 function resetPassword() {
    password1El.textContent = "";
    password2El.textContent = "";
+
+   // this updates html text, then actual input value attribute
    passwordLengthInput.textContent = "15";
+   passwordLengthInput.value = "15";
 }
 
 
