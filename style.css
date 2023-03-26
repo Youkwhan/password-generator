@@ -1,3 +1,122 @@
 body {
-    margin: 0;
+	margin: 0;
+	background-color: #1c1c1c;
+	font-family: "Karla", sans-serif;
+}
+
+/* doesnt work lol okay... */
+.container{
+	border-radius: 10%;
+	overflow: hidden;
+}
+
+main {
+	box-sizing: border-box;
+	padding: 50px 50px 115px;
+	width: 550px;
+	height: 550px;
+	background-color: #1f2937;
+	margin: 0 auto; /*center horizontally within parent */
+
+	/* position the element center of body */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* position the element back by 50% of it's own width and height */
+	transform: translate(-50%, -50%);
+
+	border: 3px solid;
+	border-image: linear-gradient(
+			to top right,
+			#a7f3d0,
+			#6ee7b7,
+			#34d399,
+			#10b981,
+			#059669,
+			#047857
+		)
+		1;
+}
+
+/* TITLE SECTION */
+
+#title-section {
+	width: 400px;
+	padding-bottom: 30px;
+	/* border: 1px solid greenyellow; */
+}
+.title {
+	font-weight: 800;
+	font-size: 35px;
+	color: #4adf86;
+	margin-bottom: 8px;
+}
+
+.title-description {
+	font-weight: 400;
+	font-style: normal;
+	color: #d5d4d8;
+}
+
+/* BUTTON SECTION */
+
+#button-section {
+	display: flex;
+	justify-content: start;
+	/* border: 1px solid greenyellow; */
+	gap: 12px;
+}
+
+#button-section button {
+	background-color: #10b981;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	padding: 8px 17px 8px 15px;
+
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+
+	transition: background-color 1s;
+}
+
+/* when we hover we use transition */
+#button-section button:hover {
+	background-color: #047857;
+}
+
+/* When we click take into effect immediately and stay focused */
+#button-section button:focus,
+#button-section button:active {
+	background-color: #064e3b;
+	transition: none;
+}
+
+/* SPACING */
+
+.spacing hr {
+	margin: 30px 0;
+	border: 1px solid #2f3e53;
+}
+
+/* PASSWORD SECTION */
+
+#password-section {
+	display: flex;
+	gap: 24px;
+}
+
+#password-section p {
+	width: 210px;
+	height: 40px;
+	background-color: #273549;
+	border-radius: 6px;
+	margin: 0;
+
+	text-align: center;
+	color: #55f991;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 38px;
 }

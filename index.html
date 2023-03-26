@@ -20,24 +20,31 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<main>
-			<section id="title-section">
-				<h1 class="title"><span>Generate a </span>random password 🔒</h1>
-				<p class="title-description">Never use an insecure password again.</p>
-			</section>
+		<div class="container">
+			<main>
+				<section id="title-section">
+					<h1 class="title">
+						<span style="color: #fff">Generate a </span><br />random password 🔒
+					</h1>
+					<p class="title-description">Never use an insecure password again.</p>
+				</section>
 
-			<!-- <section id="toggle-section"></section> -->
-			<section id="button-section">
-				<button type="button" class="generate-pass">Generate passwords</button>
-				<button type="button" class="reset">Reset</button>
-			</section>
-			<div class="spacing"><hr /></div>
-			<section id="password-section">
-				<input type="text" class="password1" />
-				<input type="text" class="password2" />
-			</section>
-		</main>
-
+				<!-- <section id="toggle-section"></section> -->
+				<section id="button-section">
+					<button type="button" class="generate-pass" onclick="setPassword()">
+						Generate passwords
+					</button>
+					<button type="button" class="reset" onclick="resetPassword()">
+						Reset
+					</button>
+				</section>
+				<div class="spacing"><hr /></div>
+				<section id="password-section">
+					<p class="password1"></p>
+					<p class="password2"></p>
+				</section>
+			</main>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>
