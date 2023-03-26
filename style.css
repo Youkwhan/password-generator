@@ -42,7 +42,6 @@ main {
 
 #title-section {
 	width: 400px;
-	padding-bottom: 30px;
 	/* border: 1px solid greenyellow; */
 }
 .title {
@@ -93,10 +92,26 @@ main {
 	transition: none;
 }
 
+/* TOGGLE SECTION */
+
+#toggle-section label{
+	font-weight: 400;
+	font-style: normal;
+	color: #d5d4d8;
+}
+
+#toggle-section #error {
+	padding-top: 8px;
+	color: red;
+}
+
 /* SPACING */
 
-.spacing hr {
+.spacing {
 	margin: 30px 0;
+}
+
+.spacing hr {
 	border: 1px solid #2f3e53;
 }
 
