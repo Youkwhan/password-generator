@@ -1,6 +1,6 @@
 # Random Password Generator
 Never use an unsecure password again.
-Site: [password-gen-92e611.netlify.app](password-gen-92e611.netlify.app)
+Site: [password-gen-92e611.netlify.app](https://password-gen-92e611.netlify.app/)
 
 This is a web application that generates two completely random passwords consisting of 15 characters including lowercase and uppercase letters, numbers, and symbols.
 
