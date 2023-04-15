@@ -12,9 +12,9 @@ body {
 
 main {
 	box-sizing: border-box;
-	padding: 50px 50px 115px;
-	width: 550px;
-	height: 600px;
+	max-width: 70%;
+	padding: 1.5em 3em;
+	
 	background-color: #1f2937;
 	margin: 0 auto; /*center horizontally within parent */
 
@@ -41,15 +41,15 @@ main {
 /* TITLE SECTION */
 
 #title-section {
-	width: 400px;
+	min-width: 100%;
 	/* border: 1px solid greenyellow; */
 }
 .title {
 	font-weight: 800;
-	font-size: 35px;
+	font-size: 2rem;
 	color: #4adf86;
-	margin-bottom: 8px;
-	margin-top: 8px;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 }
 
 .title-description {
@@ -64,19 +64,19 @@ main {
 	display: flex;
 	justify-content: start;
 	/* border: 1px solid greenyellow; */
-	gap: 12px;
+	gap: 0.75em;
 }
 
 #button-section button {
 	background-color: #10b981;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 	border-radius: 6px;
-	padding: 8px 17px 8px 15px;
+	padding: 0.5em 1em 0.5em 1em;
 
 	color: #fff;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1rem;
+	line-height: 1.5rem;
 
 	transition: background-color 1s;
 }
@@ -99,18 +99,18 @@ main {
 	font-weight: 400;
 	font-style: normal;
 	color: #7dd87a;
-	padding-right: 8px;
+	padding-right: 0.5em;
 }
 
 #toggle-section #error {
-	padding-top: 8px;
+	padding-top: 0.5em;
 	color: red;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
+	gap: 1.25em;
 	margin-top: 1rem;
 }
 
@@ -122,7 +122,7 @@ main {
 .toggle-text {
 	font-weight: 500;
 	color: #7dd87a;
-	padding-top: 5px;
+	padding-top: 0.3em;
 }
 
 /* The switch - the box around the slider */
@@ -181,7 +181,7 @@ main {
 /* SPACING */
 
 .spacing {
-	margin: 30px 0;
+	margin: 1.875em 0;
 }
 
 .spacing hr {
@@ -192,12 +192,13 @@ main {
 
 #password-section {
 	display: flex;
-	gap: 24px;
+	gap: 1.5em;
 }
 
 #password-section p {
-	width: 210px;
-	height: 40px;
+	/* width: 210px;
+	height: 40px; */
+	width: 50%;
 	background-color: #273549;
 	border-radius: 6px;
 	margin: 0;
@@ -205,6 +206,6 @@ main {
 	text-align: center;
 	color: #55f991;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 38px;
+	font-size: 1rem;
+	line-height: 2.3rem;
 }
