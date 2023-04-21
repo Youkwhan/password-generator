@@ -20,76 +20,76 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="container">
-			<main>
-				<section id="title-section">
-					<h1 class="title">
-						<span style="color: #fff">Generate a </span><br />random password 🔒
-					</h1>
-					<p class="title-description">Never use an insecure password again.</p>
-				</section>
-				<div class="spacing"><hr /></div>
-				<section id="toggle-section">
-					<label for="password-length" class="password-label"
-						>Password Length (1-15):</label
-					>
-					<input
-						type="number"
-						id="password-length"
-						min="1"
-						max="15"
-						value="15"
-					/>
-					<div id="error"></div>
+		<main>
+			<section id="title-section">
+				<h1 class="title">
+					<span style="color: #fff">Generate a </span><br />random password 🔒
+				</h1>
+				<p class="title-description">Never use an insecure password again.</p>
+			</section>
+			<div class="spacing"><hr /></div>
+			<section id="toggle-section">
+				<label for="password-length" class="password-label"
+					>Password Length (1-15):</label
+				>
+				<input type="number" id="password-length" min="1" max="15" value="15" />
+				<div id="error"></div>
 
-					<!-- 4 toggle checkbox -->
-					<div class="grid-container">
-						<div class="col">
-							<label class="toggle-label">
-								<input type="checkbox" id="uppercase-toggle" class="toggle-input" />
-								<span class="slider round"></span>
-							</label>
-							<span class="toggle-text">Uppercase</span>
-						</div>
-						<div class="col">
-							<label class="toggle-label">
-								<input type="checkbox" id="lowercase-toggle" class="toggle-input" />
-								<span class="slider round"></span>
-							</label>
-							<span class="toggle-text">Lowercase</span>
-						</div>
-						<div class="col">
-							<label class="toggle-label">
-								<input type="checkbox" id="numbers-toggle" class="toggle-input" />
-								<span class="slider round"></span>
-							</label>
-							<span class="toggle-text">Numbers</span>
-						</div>
-						<div class="col">
-							<label class="toggle-label">
-								<input type="checkbox" id="symbols-toggle" class="toggle-input" />
-								<span class="slider round"></span>
-							</label>
-							<span class="toggle-text">Symbols</span>
-						</div>
+				<!-- 4 toggle checkbox -->
+				<div class="grid-container">
+					<div class="col">
+						<label class="toggle-label">
+							<input
+								type="checkbox"
+								id="uppercase-toggle"
+								class="toggle-input"
+							/>
+							<span class="slider round"></span>
+						</label>
+						<span class="toggle-text">Uppercase</span>
 					</div>
-				</section>
-				<div class="spacing"></div>
-				<section id="button-section">
-					<button type="button" class="generate-pass" onclick="setPassword()">
-						Generate passwords
-					</button>
-					<button type="button" class="reset" onclick="resetPassword()">
-						Reset
-					</button>
-				</section>
-				<div class="spacing"><hr /></div>
-				<section id="password-section">
-					<p class="password1"></p>
-					<p class="password2"></p>
-				</section>
-			</main>
-		</div>
+					<div class="col">
+						<label class="toggle-label">
+							<input
+								type="checkbox"
+								id="lowercase-toggle"
+								class="toggle-input"
+							/>
+							<span class="slider round"></span>
+						</label>
+						<span class="toggle-text">Lowercase</span>
+					</div>
+					<div class="col">
+						<label class="toggle-label">
+							<input type="checkbox" id="numbers-toggle" class="toggle-input" />
+							<span class="slider round"></span>
+						</label>
+						<span class="toggle-text">Numbers</span>
+					</div>
+					<div class="col">
+						<label class="toggle-label">
+							<input type="checkbox" id="symbols-toggle" class="toggle-input" />
+							<span class="slider round"></span>
+						</label>
+						<span class="toggle-text">Symbols</span>
+					</div>
+				</div>
+			</section>
+			<div class="spacing"></div>
+			<section id="button-section">
+				<button type="button" class="generate-pass" onclick="setPassword()">
+					Generate passwords
+				</button>
+				<button type="button" class="reset" onclick="resetPassword()">
+					Reset
+				</button>
+			</section>
+			<div class="spacing"><hr /></div>
+			<section id="password-section">
+				<p class="password1"></p>
+				<p class="password2"></p>
+			</section>
+		</main>
 		<script src="index.js"></script>
 	</body>
 </html>

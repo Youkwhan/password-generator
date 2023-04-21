@@ -1,7 +1,15 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+ }
+
+ html, body {
+	height: 100%;
+ }
+
 body {
 	margin: 0;
-	background-color: #1c1c1c;
 	font-family: "Karla", sans-serif;
+	background-color: #1c1c1c;
 }
 
 main {
@@ -9,7 +17,7 @@ main {
 	width: 100%;
 	max-width: 550px;
 	padding: 1.5em 3em;
-	
+
 	background-color: #1f2937;
 	margin: 0 auto; /*center horizontally within parent */
 
@@ -31,6 +39,8 @@ main {
 			#047857
 		)
 		1;
+
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* TITLE SECTION */
@@ -189,13 +199,15 @@ main {
 #password-section {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1.5em;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
 }
 
 #password-section p {
 	/* width: 210px;
 	height: 40px; */
-	width: 50%;
+	width: 48%;
 	background-color: #273549;
 	border-radius: 6px;
 	margin: 0;
