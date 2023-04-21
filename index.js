@@ -50,11 +50,11 @@ function setPassword() {
 function getPassword(passwordLength) {
 	let selectedCharacters = toggledCharacters();
 	// console.log(selectedCharacters)
-	let tempPassword = [];
+	let tempPassword = "";
 	for (let i = 0; i < passwordLength; i++) {
-		tempPassword.push(getRandomChar(selectedCharacters));
+		tempPassword += getRandomChar(selectedCharacters);
 	}
-	return tempPassword.join("");
+	return tempPassword;
 }
 
 // return char[str]
